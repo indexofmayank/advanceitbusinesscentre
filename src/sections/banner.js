@@ -54,26 +54,10 @@ const Banner = () => {
       <Container>
         <Box sx={styles.grid}>
           <Box as="form" sx={styles.domainCard} onSubmit={handleSubmit}>
-            <Heading>Built your business with a website</Heading>
+            <Heading>Built your business with a website - Advance It Business Centre</Heading>
             <Flex sx={styles.inputGroup}>
               <Label htmlFor="domainName" variant="styles.srOnly">
-                Your Domain Name
               </Label>
-              <Input
-                type="text"
-                id="domainName"
-                value={state.domainName}
-                onChange={handleChange}
-                placeholder="Your domain name"
-              />
-              <Label htmlFor="tld" variant="styles.srOnly">
-                Select TLD
-              </Label>
-              <Select id="tld" defaultValue={state.tld} onChange={handleChange}>
-                {tlds.map((tld, i) => (
-                  <option key={i}>{tld.label}</option>
-                ))}
-              </Select>
             </Flex>
             <Button type="submit" variant="primary" sx={styles.submit}>
               Start for free

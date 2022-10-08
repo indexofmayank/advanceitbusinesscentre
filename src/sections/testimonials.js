@@ -5,29 +5,15 @@ import dynamic from 'next/dynamic';
 const Testimonial = dynamic(() => import('components/cards/testimonial'), {
   ssr: false,
 });
-import author from 'assets/images/testimonial.png';
+import author from 'assets/images/RITA KUMARI_093733.png';
 import { rgba } from 'polished';
 
 const data = [
   {
     id: 1,
     avatar: author,
-    authorName: 'Melina Pettendorfer',
-    designation: 'CEO of Uber',
-    text: `Best host I've had in 10 years. Smooth migration, no stress, and friendly support one click away. I'm very happy and recommend their services`,
-  },
-  {
-    id: 2,
-    avatar: author,
-    authorName: 'Melina Pettendorfer',
-    designation: 'CEO of Google',
-    text: `Best host I've had in 10 years. Smooth migration, no stress, and friendly support one click away. I'm very happy and recommend their services`,
-  },
-  {
-    id: 3,
-    avatar: author,
-    authorName: 'Melina Pettendorfer',
-    designation: 'CEO of Microsoft',
+    authorName: 'Rita Kumari',
+    designation: 'CEO of Advance It Business Centre',
     text: `Best host I've had in 10 years. Smooth migration, no stress, and friendly support one click away. I'm very happy and recommend their services`,
   },
 ];

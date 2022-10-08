@@ -7,15 +7,15 @@ import GiftBox from 'components/icons/gift-box';
 const data = [
   {
     tld: '.com',
-    price: 15,
+    price: 700,
   },
   {
     tld: '.net',
-    price: 14,
+    price: 800,
   },
   {
     tld: '.org',
-    price: 19,
+    price: 1000,
   },
 ];
 
@@ -24,12 +24,12 @@ const TopBar = () => {
     <Box as="section" sx={styles.topbar}>
       <Box sx={styles.content}>
         <Text as="span" className="caption">
-          <GiftBox /> Cyber monday sale begin, just grave the hot pricing
+          <GiftBox /> Cyber season sale begin, just grave the hot pricing
         </Text>
         <Text as="span" className="tlds">
           {data.map((item, i) => (
             <strong key={i}>
-              {item.tld} ${item.price}
+              {item.tld} ₹{item.price}
             </strong>
           ))}
         </Text>

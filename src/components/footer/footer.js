@@ -1,7 +1,7 @@
 /** @jsx jsx */
 import { jsx, Box, Text, Container } from 'theme-ui';
 import { rgba } from 'polished';
-import Logo from 'components/icons/logo';
+//import Logo from 'components/icons/logo';
 import { Link } from 'components/link';
 import CallToAction from 'sections/call-to-action';
 import Widget from './widget';
@@ -17,7 +17,7 @@ export default function Footer() {
           <Box sx={styles.footerTopInner}>
             <Box sx={styles.about}>
               <Box sx={styles.logo}>
-                <Logo />
+                {/* <Logo /> */}
               </Box>
               <Box sx={styles.terms}>
                 <Link path="#!">Terms of use</Link>
@@ -25,7 +25,13 @@ export default function Footer() {
                 <Link path="#!">Privacy</Link>
               </Box>
               <Text as="p" sx={styles.copyright}>
-                Copyright by {new Date().getFullYear()} RedQ, Inc
+                Copyright by {new Date().getFullYear()} advance IT Business Centre, Inc
+              </Text>
+              <Text as="p" sx={styles.copyright}>
+                Design by - Janta Group
+              </Text>
+              <Text as="p" sx={styles.copyright}>
+              DS College Rd, Khanqah Mohalla, Dwasay, Katihar, Bihar 854105
               </Text>
             </Box>
             {menuItems.map(({ id, title, items }) => (
