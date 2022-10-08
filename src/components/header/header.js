@@ -2,7 +2,7 @@
 import { jsx, Box, Flex, Container, Button } from 'theme-ui';
 import { Fragment, useState } from 'react';
 import Sticky from 'react-stickynode';
-import Logo from 'components/logo';
+//import Logo from 'components/logo';
 import TopBar from 'components/topbar';
 import LockIcon from 'components/icons/lock';
 import HamburgerMenu from 'components/hamburger';
@@ -49,7 +49,7 @@ export default function Header() {
           className={state.isSticky ? 'is-sticky' : ''}
         >
           <Container sx={styles.container}>
-            <Logo sx={styles.logo} isSticky={state.isSticky} />
+            {/* <Logo sx={styles.logo} isSticky={state.isSticky} /> */}
             <Navbar
               isSticky={state.isSticky}
               isMobile={state.isMobileMenu}
@@ -113,9 +113,9 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'space-between',
   },
-  logo: {
-    mr: [null, null, null, null, 6, null, 12],
-  },
+  // logo: {
+  //   mr: [null, null, null, null, 6, null, 12],
+  // },
   buttonGroup: {
     alignItems: 'center',
     marginLeft: 'auto',
