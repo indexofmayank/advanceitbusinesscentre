@@ -31,6 +31,9 @@ export default function Footer() {
                 Design by - Janta Group
               </Text>
               <Text as="p" sx={styles.copyright}>
+              9431610560
+              </Text>
+              <Text as="p" sx={styles.copyright}>
               DS College Rd, Khanqah Mohalla, Dwasay, Katihar, Bihar 854105
               </Text>
             </Box>
