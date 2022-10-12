@@ -5,29 +5,17 @@ import Service from 'components/cards/service';
 
 const services = [
   {
-    title: 'Cloud Hosting',
+    title: 'All Online Work/Services',
   },
   {
-    title: 'Web Hosting',
+    title: 'Website Developement/Web Designing',
   },
   {
-    title: 'VPS Hosting',
+    title: 'App Developement/software Development',
   },
   {
-    title: 'Wordpress Hosting',
-  },
-  {
-    title: 'Domains',
-  },
-  {
-    title: 'Email Hosting',
-  },
-  {
-    title: 'VPN Service',
-  },
-  {
-    title: 'Image Cloud',
-  },
+    title: 'Digital Marketing',
+  }
 ];
 
 const Services = () => {
