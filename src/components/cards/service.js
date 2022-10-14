@@ -1,11 +1,12 @@
 /** @jsx jsx */
-import { jsx, Box, Text } from 'theme-ui';
+import { jsx, Box, Text, Image } from 'theme-ui';
 
 const Service = ({ service }) => {
   return (
     <Box sx={styles.service}>
       <Text as="p">{service.title}</Text>
       {/* <Text as="span">${service.price}/mo</Text> */}
+      <Image src={service.url} alt={service.url} />
     </Box>
   );
 };

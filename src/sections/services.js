@@ -3,18 +3,27 @@ import { jsx, Box, Container } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import Service from 'components/cards/service';
 
+import img1 from 'assets/images/1.jpeg';
+import img2 from 'assets/images/2.jpeg';
+import img3 from 'assets/images/3.jpeg';
+import img4 from 'assets/images/4.jpeg';
+
 const services = [
   {
     title: 'All Online Work/Services',
+    url: img1,
   },
   {
     title: 'Website Developement/Web Designing',
+    url: img2,
   },
   {
     title: 'App Developement/software Development',
+    url: img3,
   },
   {
     title: 'Digital Marketing',
+    url: img4
   }
 ];
 
@@ -27,9 +36,9 @@ const Services = () => {
           title="Didn’t find what you were looking for?"
         />
         <Box sx={styles.grid}>
-          {services.map((service, i) => (
-            <Service key={i} service={service} />
-          ))}
+         {services.map((service, i) => (
+          <Service key={i} service={service} />
+         ))}
         </Box>
       </Container>
     </Box>
